@@ -1,0 +1,49 @@
+html {
+    box-sizing: border-box;
+    background-image: url("https://hanielgo.com/wp-content/uploads/2018/12/wallpaper-con-movimiento.jpg");
+    background-size: cover;
+}
+header {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+header img {
+    width: 800px;
+    height: 300px;
+}
+.container {
+    backdrop-filter: contrast(1.0%);
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    color: #fffefe;
+    font-weight: 400;
+    font-size: 40px;
+}
+div {
+    color: #fffefe;
+    font-weight: 400;
+    text-align: center;
+}
+/* Estilos para el pie de página */
+footer {
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: brightness(0.5%);
+}
+a {
+    color: white;
+    display: block;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
