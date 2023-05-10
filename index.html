@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Ejemplo de página similar a la SEP</title>
-    <link rel="stylesheet" href="styleindex.css">
+    <link rel="stylesheet" href="main.css">
+    <script>
+        function myFunction() {
+            const x = document.getElementById("myDIV");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+        function myfunction() {
+            const x = document.getElementById("myDIV");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
 <header>
-    <img src="https://th.bing.com/th/id/R.d4f571588762998acf62042846aaccd3?rik=AiPjgD2Fv8MgaQ&pid=ImgRaw&r=0" alt="banner">
     <h1>Drogas y su clasificación</h1>
 </header>
 <nav>
@@ -19,15 +36,37 @@
         <li><a href="benzodiacepinas.html">Benzodiacepinas</a></li>
     </ul>
 </nav>
-<div class="container">
+<br> <br>
+<br> <br>
+<br> <br>
+<div id="container">
     <h2>Drogas y su clasificación</h2>
     <h4>¿Qué son las drogas?</h4>
     <p>El primer paso es conocer que la Organización Mundial de la Salud define como "droga" a toda sustancia que, introducida en el organismo por cualquier vía de administración, produce alguna alteración del natural funcionamiento del sistema nervioso central del individuo y es, además, susceptible de crear dependencia, ya sea psicológica, física o ambas. Se diferencian en lícitas e ilícitas; también son clasificadas de acuerdo con sus efectos, principalmente en: estimulantes, depresoras y alucinógenas.
         El consumo de drogas es un problema de salud pública; se asocia con violencia familiar, escolar, laboral y social, disminución de la salud física y mental, así como de la calidad y el tiempo de vida, peligro durante la niñez y la juventud; en general, afecta a toda la población, aunque representa mayor peligro para niños y jóvenes. Los factores de riesgo involucrados en el consumo son varia-dos, por lo que estar informados es la mejor herramienta para la prevención..</p>
-    <a href="moreinfo.html" class="btn">Leer más</a>
 </div>
+    <div id="myDIV" style="display: none">
+        <h2 class="title">Clasificación de las drogas</h2>
+        <h4>Estimulantes</h4>
+        <p>Las drogas estimulantes son aquellas que aceleran el funcionamiento del sistema nervioso central, produciendo un estado de alerta y excitación. Entre ellas se encuentran la cocaína, el crack, las anfetaminas, la nicotina y la cafeína.</p>
+        <h4>Depresoras</h4>
+        <p>Las drogas depresoras son aquellas que disminuyen la actividad del sistema nervioso central, produciendo un estado de relajación y somnolencia. Entre ellas se encuentran el alcohol, los barbitúricos, los tranquilizantes y los inhalantes.</p>
+        <h4>Alucinógenas</h4>
+        <p>Las drogas alucinógenas son aquellas que producen alteraciones en la percepción, el estado de ánimo y la conciencia. Entre ellas se encuentran el LSD, la marihuana, los hongos alucinógenos y el peyote.</p>
+        <h2 class = "videos">Videos</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2QZLJm2X4xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2QZLJm2X4xw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+<button onclick="myFunction()">Leer más</button>
+<button onclick="myfunction()">Leer menos</button>
+<br> <br>
+<br> <br>
+<br> <br>
+<br> <br>
+<br> <br>
 <footer>
-    <p>© 2023 Derechos reservados | Diseñado por <a href="#">@DARK</a></p>
+    <p>© 2023 Derechos reservados | Diseñado por<a href="equipo.html" target="_blank">Our Team</a></p>
 </footer>
 </body>
 </html>
